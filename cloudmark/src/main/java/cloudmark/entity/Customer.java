@@ -77,7 +77,7 @@ public class Customer {
     // private Set<Job> jobs;
 
     @JsonIgnore
-    @ManyToMany(mappedBy = "companies", fetch = FetchType.LAZY)
+    @ManyToMany(mappedBy = "customers", fetch = FetchType.LAZY)
     private Set<Company> companies;
 
 }
