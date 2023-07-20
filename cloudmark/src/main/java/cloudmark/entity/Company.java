@@ -64,7 +64,7 @@ public class Company {
 
     @Nullable
     @Size(max = 20)
-    private String fax;
+    private Integer fax;
 
     @JsonIgnore
     @OneToMany(mappedBy = "company", fetch = FetchType.LAZY)

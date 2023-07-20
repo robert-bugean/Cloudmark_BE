@@ -35,7 +35,7 @@ public class Customer {
 
     @Column(name = "vat_number", unique = true)
     @NotEmpty(message = "vatNumber cannot be empty")
-    @Size(min = 11, max = 11)
+    @Size(min = 13, max = 13)
     private String vatNumber;
 
     @NotEmpty(message = "address cannot be empty")
@@ -43,8 +43,8 @@ public class Customer {
     private String address;
 
     @NotEmpty(message = "cap cannot be empty")
-    @Size(max = 5)
-    private String cap;
+    @Size(min = 0, max = 5)
+    private Integer cap;
 
     @NotEmpty(message = "city cannot be empty")
     @Size(max = 20)
@@ -58,7 +58,7 @@ public class Customer {
     @Column(name = "phone_number")
     @NotEmpty(message = "phoneNumber cannot be empty")
     @Size(max = 15)
-    private String phoneNumber;
+    private Integer phoneNumber;
 
     @NotEmpty(message = "email cannot be empty")
     @Size(max = 20)
@@ -70,7 +70,7 @@ public class Customer {
 
     @Nullable
     @Size(max = 20)
-    private String fax;
+    private Integer fax;
 
     // @JsonIgnore
     // @OneToMany(mappedBy = "jobs", fetch = FetchType.LAZY)
