@@ -37,7 +37,7 @@ public class Company {
 
     @Column(name = "vat_number", unique = true)
     @NotEmpty(message = "vatNumber cannot be empty")
-    @Size(min = 11, max = 11)
+    @Size(min = 13, max = 13)
     private String vatNumber;
 
     @NotEmpty(message = "address cannot be empty")
