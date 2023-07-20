@@ -52,7 +52,7 @@ public class Company {
     @Column(name = "phone_number")
     @NotEmpty(message = "phoneNumber cannot be empty")
     @Size(max = 15)
-    private String phoneNumber;
+    private Integer phoneNumber;
 
     @NotEmpty(message = "email cannot be empty")
     @Size(max = 20)
