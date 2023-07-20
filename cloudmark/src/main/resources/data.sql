@@ -14,13 +14,13 @@ VALUES
 
 INSERT INTO customer (customer_name, vat_number, address, cap, city, iban, phone_number, email, pec, fax)
 VALUES
-  ("cliente 1", "it46785342986", "via bologna 3", "78253", "bologna", "it70x0542811101000003456789", "0612345678", "cliente1@email.com", "cliente1@pec.com", NULL),
-  ("cliente 2", "it78965342136", "via roma 10", "00100", "roma", "it70x0542811101000000987654", "0312345678", "cliente2@email.com", "cliente2@pec.com", NULL),
-  ("cliente 3", "it12567890456", "via milano 15", "20121", "milano", "it70x0542811101000001122334", "0412345678", "cliente3@email.com", "cliente3@pec.com", NULL),
-  ("cliente 4", "it54321234567", "via firenze 5", "50123", "firenze", "it70x0542811101000009988776", "0512345678", "cliente4@email.com", "cliente4@pec.com", NULL),
-  ("cliente 5", "it97890123456", "via torino 8", "10100", "torino", "it70x0542811101000006677889", "0612345678", "cliente5@email.com", "cliente5@pec.com", NULL),
-  ("cliente 6", "it67890123432", "via napoli 23", "80100", "napoli", "it70x0542811101000001234567", "0712345678", "cliente6@email.com", "cliente6@pec.com", NULL),
-  ("cliente 7", "it34567898765", "via palermo 15", "90100", "palermo", "it70x0542811101000006456789", "0812345678", "cliente7@email.com", "cliente7@pec.com", NULL),
-  ("cliente 8", "it12345678899", "via venezia 10", "30100", "venezia", "it70x0542811101000005678901", "0912345678", "cliente8@email.com", "cliente8@pec.com", NULL),
-  ("cliente 9", "it98765432109", "via genova 20", "16100", "genova", "it70x0542811101000009090909", "1012345678", "cliente9@email.com", "cliente9@pec.com", NULL),
-  ("cliente 10", "it10101010101", "via padova 5", "35100", "padova", "it70x0542811101000001010101", "1112345678", "cliente10@email.com", "cliente10@pec.com", NULL);
+  ("cliente 1", "it46785342986", "via bologna 3", "20123", "bologna", "it70x0542811101000003456789", "0612345678", "cliente1@email.com", "cliente1@pec.com", NULL),
+  ("cliente 2", "it78965342136", "via roma 10", "35122", "roma", "it70x0542811101000000987654", "0312345678", "cliente2@email.com", "cliente2@pec.com", NULL),
+  ("cliente 3", "it12567890456", "via milano 15", "40145", "milano", "it70x0542811101000001122334", "0412345678", "cliente3@email.com", "cliente3@pec.com", NULL),
+  ("cliente 4", "it54321234567", "via firenze 5", "10144", "firenze", "it70x0542811101000009988776", "0512345678", "cliente4@email.com", "cliente4@pec.com", NULL),
+  ("cliente 5", "it97890123456", "via torino 8", "50129", "torino", "it70x0542811101000006677889", "0612345678", "cliente5@email.com", "cliente5@pec.com", NULL),
+  ("cliente 6", "it67890123432", "via napoli 23", "80126", "napoli", "it70x0542811101000001234567", "0712345678", "cliente6@email.com", "cliente6@pec.com", NULL),
+  ("cliente 7", "it34567898765", "via palermo 15", "90134", "palermo", "it70x0542811101000006456789", "0812345678", "cliente7@email.com", "cliente7@pec.com", NULL),
+  ("cliente 8", "it12345678899", "via venezia 10", "30175", "venezia", "it70x0542811101000005678901", "0912345678", "cliente8@email.com", "cliente8@pec.com", NULL),
+  ("cliente 9", "it98765432109", "via genova 20", "16148", "genova", "it70x0542811101000009090909", "1012345678", "cliente9@email.com", "cliente9@pec.com", NULL),
+  ("cliente 10", "it10101010101", "via padova 5", "78236", "padova", "it70x0542811101000001010101", "1112345678", "cliente10@email.com", "cliente10@pec.com", NULL);
