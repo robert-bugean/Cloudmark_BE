@@ -39,7 +39,7 @@ public class Customer {
     private String vatNumber;
 
     @NotEmpty(message = "address cannot be empty")
-    @Size(max = 20)
+    @Size(max = 30)
     private String address;
 
     @NotEmpty(message = "cap cannot be empty")
@@ -57,8 +57,8 @@ public class Customer {
 
     @Column(name = "phone_number")
     @NotEmpty(message = "phoneNumber cannot be empty")
-    @Size(max = 15)
-    private Integer phoneNumber;
+    @Size(min = 10, max = 10)
+    private Long phoneNumber;
 
     @NotEmpty(message = "email cannot be empty")
     @Size(max = 20)
