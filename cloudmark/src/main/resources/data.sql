@@ -45,13 +45,13 @@ VALUES
 
 INSERT INTO employee (first_name, last_name, address, cap, city, iban, phone_number, email, contract_type, contract_start, company_id)
 VALUES
-  ('federico', 'moretti', 'viale ippocrate 60', 87020, 'cosenza', 'it18i0300203280572776323858', 3807046727, 'employee1@email.com', 'tirocinio', '2020-01-16', 1),
-  ('valentina', 'rizzo', 'via adua 52', 10092, 'torino', 'it11t0300203280799256355154', 3783918511, 'employee2@email.com', 'determinato', '2020-02-14', 7),
-  ('riccardo', 'de angelis', 'via scuderlando 43', 64020, 'teramo', 'it72d0300203280591577188252', 3250043585, 'employee3@email.com', 'indeterminato', '2020-07-21', 3),
-  ('eleonora', 'mancini', 'via leopardi 5', 23032, 'sondrio', 'it82o0300203280824227796836', 3351721729, 'employee4@email.com', 'determinato', '2020-08-11', 9),
-  ('davide', 'russo', 'via vipacco 134', 17031, 'savona', 'it12c0300203280514327647156', 3162139297, 'employee5@email.com', 'tirocinio', '2020-08-18', 4),
-  ('serena', 'ferrara', 'via tasso 3', 06015, 'perugia', 'it88m0300203280589251836712', 3942989152, 'employee6@email.com', 'indeterminato', '2021-10-19', 10),
-  ('alessandro', 'monti', 'via castelfidardo 52', 87030, 'cosenza', 'it33v0300203280534583938635', 3385865980, 'employee7@email.com', 'indeterminato', '2022-05-16', 2),
-  ('francesca', 'greco', 'via nolana 26', 19139, 'la spezia', 'it66s0300203280952558234812', 3627223770, 'employee8@email.com', 'determinato', '2022-11-17', 6),
-  ('lorenzo', 'fontana', 'via nuova agnano 18', 50053, 'firenze', 'it91j0300203280727575443247', 3790598204, 'employee9@email.com', 'indeterminato', '2023-10-10', 5),
-  ('elisa', 'gentile', 'via delle coste 28', 42019, 'reggio emilia', 'it22q0300203280283239846976', 3459250247, 'employee10@email.com', 'apprendistato', '2023-10-31', 8);
+  ('federico', 'moretti', 'viale ippocrate 60', 87020, 'cosenza', 'it18i0300203280572776323858', 3807046727, 'cliente1@email.com', 'tirocinio', '2020-01-16', 1),
+  ('valentina', 'rizzo', 'via adua 52', 10092, 'torino', 'it11t0300203280799256355154', 3783918511, 'cliente2@email.com', 'determinato', '2020-02-14', 7),
+  ('riccardo', 'de angelis', 'via scuderlando 43', 64020, 'teramo', 'it72d0300203280591577188252', 3250043585, 'cliente3@email.com', 'indeterminato', '2020-07-21', 3),
+  ('eleonora', 'mancini', 'via leopardi 5', 23032, 'sondrio', 'it82o0300203280824227796836', 3351721729, 'cliente4@email.com', 'determinato', '2020-08-11', 9),
+  ('davide', 'russo', 'via vipacco 134', 17031, 'savona', 'it12c0300203280514327647156', 3162139297, 'cliente5@email.com', 'tirocinio', '2020-08-18', 4),
+  ('serena', 'ferrara', 'via tasso 3', 06015, 'perugia', 'it88m0300203280589251836712', 3942989152, 'cliente6@email.com', 'indeterminato', '2021-10-19', 10),
+  ('alessandro', 'monti', 'via castelfidardo 52', 87030, 'cosenza', 'it33v0300203280534583938635', 3385865980, 'cliente7@email.com', 'indeterminato', '2022-05-16', 2),
+  ('francesca', 'greco', 'via nolana 26', 19139, 'la spezia', 'it66s0300203280952558234812', 3627223770, 'cliente8@email.com', 'determinato', '2022-11-17', 6),
+  ('lorenzo', 'fontana', 'via nuova agnano 18', 50053, 'firenze', 'it91j0300203280727575443247', 3790598204, 'cliente9@email.com', 'indeterminato', '2023-10-10', 5),
+  ('elisa', 'gentile', 'via delle coste 28', 42019, 'reggio emilia', 'it22q0300203280283239846976', 3459250247, 'cliente10@email.com', 'apprendistato', '2023-10-31', 8);
