@@ -14,6 +14,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 // import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.Temporal;
+import jakarta.persistence.TemporalType;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
@@ -78,6 +80,7 @@ public class Employee {
     }
 
     @Column(name = "contract_start", nullable = false)
+    @Temporal(TemporalType.DATE)
     private Date contractStart;
 
     // @ManyToMany(mappedBy = "jobs", fetch = FetchType.LAZY)
