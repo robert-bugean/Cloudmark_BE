@@ -2,6 +2,9 @@ package cloudmark.entity;
 
 import java.util.Date;
 // import java.util.Set;
+import java.util.Set;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -12,6 +15,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 // import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Temporal;
@@ -83,8 +88,14 @@ public class Employee {
     @Temporal(TemporalType.DATE)
     private Date contractStart;
 
-    // @ManyToMany(mappedBy = "jobs", fetch = FetchType.LAZY)
-    // private Set<Job> jobs;
+    @JsonIgnore
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(
+        name = "employee_job",
+        joinColumns = @JoinColumn(name = "employee_id"),
+        inverseJoinColumns = @JoinColumn(name = "job_id")
+    )
+    private Set<Job> jobs;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "company_id")
