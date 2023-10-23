@@ -37,10 +37,11 @@ public class Job {
     @Temporal(TemporalType.DATE)
     private Date startDate;
 
-    @Column(name = "end_date", nullable = false)
+    @Column(name = "end_date")
     @Temporal(TemporalType.DATE)
     private Date endDate;
 
+    
     @ManyToOne
     @JoinColumn(name = "customer_id", nullable = false)
     private Customer customer;

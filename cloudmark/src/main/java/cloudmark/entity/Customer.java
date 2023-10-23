@@ -2,8 +2,6 @@ package cloudmark.entity;
 
 import java.util.Set;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import jakarta.annotation.Nullable;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -12,7 +10,7 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
-// import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToMany;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
@@ -72,11 +70,10 @@ public class Customer {
     @Size(max = 20)
     private Integer fax;
 
-    // @JsonIgnore
-    // @OneToMany(mappedBy = "jobs", fetch = FetchType.LAZY)
-    // private Set<Job> jobs;
 
-    @JsonIgnore
+    @OneToMany(mappedBy = "customer", fetch = FetchType.LAZY)
+    private Set<Job> jobs;
+
     @ManyToMany(mappedBy = "customers", fetch = FetchType.LAZY)
     private Set<Company> companies;
 

@@ -2,8 +2,6 @@ package cloudmark.entity;
 
 import java.util.Set;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-
 import jakarta.annotation.Nullable;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -66,11 +64,10 @@ public class Company {
     @Size(max = 20)
     private Integer fax;
 
-    @JsonIgnore
+
     @OneToMany(mappedBy = "company", fetch = FetchType.LAZY)
     private Set<Employee> employees;
 
-    @JsonIgnore
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(
         name = "company_customer",

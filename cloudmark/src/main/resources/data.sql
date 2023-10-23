@@ -48,10 +48,39 @@ VALUES
   ('federico', 'moretti', 'viale ippocrate 60', 87020, 'cosenza', 'it18i0300203280572776323858', 3807046727, 'cliente1@email.com', 'tirocinio', '2020-01-16', 1),
   ('valentina', 'rizzo', 'via adua 52', 10092, 'torino', 'it11t0300203280799256355154', 3783918511, 'cliente2@email.com', 'determinato', '2020-02-14', 7),
   ('riccardo', 'de angelis', 'via scuderlando 43', 64020, 'teramo', 'it72d0300203280591577188252', 3250043585, 'cliente3@email.com', 'indeterminato', '2020-07-21', 3),
-  ('eleonora', 'mancini', 'via leopardi 5', 23032, 'sondrio', 'it82o0300203280824227796836', 3351721729, 'cliente4@email.com', 'determinato', '2020-08-11', 9),
+  ('eleonora', 'mancini', 'via leopardi 5', 23032, 'sondrio', 'it82o0300203280824227796836', 3351721729, 'cliente4@email.com', 'determinato', '2020-08-11', 8),
   ('davide', 'russo', 'via vipacco 134', 17031, 'savona', 'it12c0300203280514327647156', 3162139297, 'cliente5@email.com', 'tirocinio', '2020-08-18', 4),
   ('serena', 'ferrara', 'via tasso 3', 06015, 'perugia', 'it88m0300203280589251836712', 3942989152, 'cliente6@email.com', 'indeterminato', '2021-10-19', 10),
   ('alessandro', 'monti', 'via castelfidardo 52', 87030, 'cosenza', 'it33v0300203280534583938635', 3385865980, 'cliente7@email.com', 'indeterminato', '2022-05-16', 2),
-  ('francesca', 'greco', 'via nolana 26', 19139, 'la spezia', 'it66s0300203280952558234812', 3627223770, 'cliente8@email.com', 'determinato', '2022-11-17', 6),
+  ('francesca', 'greco', 'via nolana 26', 19139, 'la spezia', 'it66s0300203280952558234812', 3627223770, 'cliente8@email.com', 'determinato', '2022-11-17', 2),
   ('lorenzo', 'fontana', 'via nuova agnano 18', 50053, 'firenze', 'it91j0300203280727575443247', 3790598204, 'cliente9@email.com', 'indeterminato', '2023-10-10', 5),
   ('elisa', 'gentile', 'via delle coste 28', 42019, 'reggio emilia', 'it22q0300203280283239846976', 3459250247, 'cliente10@email.com', 'apprendistato', '2023-10-31', 8);
+
+INSERT INTO job (description, start_date, end_date, customer_id)
+VALUES
+  ('lavoro 1', '2020-03-20', '2020-04-16', 7),
+  ('lavoro 2', '2020-06-16', '2021-02-20', 3),
+  ('lavoro 2', '2020-10-16', '2020-11-30', 3),
+  ('lavoro 3', '2021-01-08', '2021-05-24', 9),
+  ('lavoro 4', '2021-01-26', '2021-07-02', 5),
+  ('lavoro 5', '2021-10-27', null, 2),
+  ('lavoro 6', '2022-10-21', null, 10),
+  ('lavoro 7', '2023-01-23', '2023-03-08', 4),
+  ('lavoro 8', '2023-07-30', '2023-08-13', 8),
+  ('lavoro 9', '2023-09-20', null, 1),
+  ('lavoro 10', '2023-10-07', '2023-11-30', 6),
+  ('lavoro 11', '2023-12-10', null, 6);
+
+INSERT INTO employee_job (employee_id, job_id)
+VALUES
+  (1, 3),
+  (2, 6),
+  (2, 7),
+  (4, 9),
+  (5, 2),
+  (6, 10),
+  (6, 1),
+  (8, 10),
+  (9, 4),
+  (9, 5),
+  (10, 8);
